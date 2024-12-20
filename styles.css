@@ -1,0 +1,219 @@
+
+:root {
+    --primary-color: #ff6f61; /* Warm, inviting coral */
+    --secondary-color: #2c3e50; /* Deep blue-gray for contrast */
+    --accent-color: #f1c40f; /* Bright yellow for call-to-action elements */
+    --background-color: #f9f9f9; /* Light gray for a clean background */
+    --border-color: #e0e0e0; /* Neutral gray for subtle borders */
+    --text-color: #333333; /* Standard dark text */
+    --light-text-color: #666666; /* Lighter text for less emphasis */
+    --button-hover: #e74c3c; /* Bright red for button hover */
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    text-transform: capitalize;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    height: 80%;
+    width: 4rem;
+}
+
+#search {
+    width: 12rem;
+    height: 2.2rem;
+    border: 2px solid var(--border-color);
+    border-radius: 5rem;
+    padding: 0 1rem;
+}
+
+.sidebar {
+    position: absolute;
+    right: 3px;
+    font-size: 2rem;
+    top: 2.5%;
+   opacity: 0;
+}
+
+.first {
+    height: 15rem;
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.fashion {
+    height: 100%;
+    width: 100%;
+}
+.position{
+    position: absolute;
+    left: 10rem;
+}
+
+.categories {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.categories img {
+    height: 15rem;
+    width: 20rem;
+    border: 2px solid var(--border-color);
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.categories img:hover {
+    transform: scale(1.05);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.mi {
+    margin-left: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem 10rem;
+}
+
+.card {
+    width: 15rem;
+    border: 2px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    
+}
+
+.card:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    height: 15rem;
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.description {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.description button {
+    height: 1.5rem;
+    width: 5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: var(--accent-color);
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.description button:hover {
+    background-color: var(--button-hover);
+}
+
+.info {
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.mes {
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+}
+
+.mesbox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 1rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.row img {
+    height: 2rem;
+    width: 3rem;
+}
+
+.footeritems input{
+    height: 1.5rem;
+    border: none;
+    width: 15rem;
+}
+.wait{
+    display: flex;
+    align-items: center;    
+    gap: 0.5rem 0.5rem;
+}
