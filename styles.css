@@ -23,6 +23,7 @@ body {
     color: var(--text-color);
 }
 
+
 .navbar {
     text-transform: capitalize;
     height: 10vh;
@@ -57,7 +58,7 @@ body {
 }
 
 .first {
-    height: 15rem;
+    height: 25rem;
     width: 100%;
     background-color: var(--secondary-color);
     color: #ffffff;
@@ -266,4 +267,14 @@ h1:hover, h2:hover, h3:hover {
     height: 15rem;
     width: 20rem;
 }
+img.fashion {
+    
+    display: block;
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+div.position {
+    text-align: center; /* Centers content within the div */
+}
+
 
