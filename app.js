@@ -56,6 +56,9 @@ c.addEventListener("click", () => {
 
 let email=document.querySelector("#e");
 let pass=document.querySelector("#p");
+let addbtn = document.querySelector(".adbtn");
+addbtn.style.backgroundColor = "red";
+
 
 const element = document.querySelector('.homedirect');
 let submit = document.querySelector(".formsubmit");
@@ -64,7 +67,7 @@ submit.addEventListener("click", () => {
     home.style.display = "block";
     element.style.display = "none";
     la.innerText=loginAs;
-    console.log(loginAs); // Print the selected value
-    console.log(email.value);
+     if(loginAs=="Consumer"){
+        addbtn.style.display="none";
+    }
 });
-
