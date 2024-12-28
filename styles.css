@@ -22,18 +22,26 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
 }
+nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
 
 
 .navbar {
-    text-transform: capitalize;
-    height: 10vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+
+    width:100%;
     background-color: var(--primary-color);
-    color: #ffffff;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   
 }
 
 .logo {
@@ -42,7 +50,7 @@ body {
 }
 
 #search {
-    width: 15rem;
+    width: 16rem;
     height: 2.2rem;
     border: 2px solid var(--border-color);
     border-radius: 1rem;
@@ -259,7 +267,7 @@ h1:hover, h2:hover, h3:hover {
 }
 
 .cat img {
-    mix-blend-mode: multiply; 
+    
     height: 15rem;
     width: 100%;
 }
@@ -276,5 +284,209 @@ img.fashion {
 div.position {
     text-align: center; /* Centers content within the div */
 }
+/* Dark Mode Styles */
+.darkbg {
+    background-color: #121212; /* Dark background color */
+    color: #e0e0e0; /* Light text color */
+}
 
+.darkbg nav {
+    background-color: #1e1e1e; /* Navbar background */
+    color: #e0e0e0; /* Navbar text color */
+}
 
+.darkbg nav .navbar p {
+    color: #e0e0e0;
+}
+
+.darkbg nav .navbar .s input {
+    background-color: #333; /* Search bar background */
+    color: #e0e0e0; /* Search bar text color */
+    border: 1px solid #444; /* Search bar border */
+}
+
+.darkbg .first {
+    background-color: #1e1e1e; /* Hero section background */
+}
+
+.darkbg .categories .cat {
+    background-color: #1e1e1e; /* Categories background */
+    border: 1px solid #333; /* Border for categories */
+}
+
+.darkbg .categories .cat p, .darkbg .categories .cat button {
+    color: #e0e0e0; /* Text color in categories */
+}
+
+.darkbg section {
+    background-color: #1e1e1e; /* Shop section background */
+}
+
+.darkbg .main .card {
+    background-color: #222; /* Card background */
+    border: 1px solid #333; /* Card border */
+}
+
+.darkbg .main .card .description p {
+    color: #e0e0e0; /* Card description text */
+}
+
+.darkbg footer {
+    background-color: #1e1e1e; /* Footer background */
+    color: #e0e0e0; /* Footer text color */
+}
+
+.darkbg footer .footeritems h2, .darkbg footer .footeritems p {
+    color: #e0e0e0;
+}
+
+.darkbg footer .footeritems input {
+    background-color: #333; /* Input field background */
+    color: #e0e0e0; /* Input field text color */
+    border: 1px solid #444; /* Input field border */
+}
+
+/* Button styles for dark mode */
+.darkbg button, .darkbg a {
+    background-color: #444; /* Button background */
+    color: #e0e0e0; /* Button text color */
+    border: 1px solid #555; /* Button border */
+}
+
+/* Hover effects for dark mode */
+.darkbg button:hover, .darkbg a:hover {
+    background-color: #555;
+    color: #ffffff;
+}
+  
+  .signup {
+    width: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border: 2px solid rgb(203, 207, 206);
+    border-radius: 0.7rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem ;
+  }
+  
+  .formsubmit:hover {
+    background-color: #45a049;
+  }
+  
+  .signup img:hover{
+    transform: scale(0.9);
+  }
+  .homedirect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+  }
+  
+  .signup {
+    width: 40%;
+    max-width: 400px;
+    background-color: #ffffff;
+    border: 2px solid #d4d4d4;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .signup img {
+    height: 4rem;
+    width: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .signup img:hover {
+    transform: scale(1.1);
+  }
+  
+  .np {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+  }
+  
+  .np label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .np input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .np input:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  }
+  
+  .formsubmit {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .formsubmit:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+  }
+  
+  .as {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center; /* Ensures vertical alignment of text and buttons */
+}
+
+.as p {
+    margin: 0;
+    font-size: 1rem; /* Adjust font size as needed */
+    color: #333; /* Optional: sets the text color */
+}
+
+.as button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Adds a smooth hover effect */
+}
+
+.as button:hover {
+    background-color: #45a049;
+}
+.btn{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0.5rem;
+}

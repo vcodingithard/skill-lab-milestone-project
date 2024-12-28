@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .container {
+            margin: 20px auto;
+            max-width: 800px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .order {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .order:last-child {
+            border-bottom: none;
+        }
+
+        .order-info {
+            flex: 3;
+        }
+
+        .order-info h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .order-info p {
+            margin: 5px 0;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .order-status {
+            flex: 1;
+            text-align: right;
+            font-weight: bold;
+            color: #27ae60;
+        }
+
+        .order-status.pending {
+            color: #e67e22;
+        }
+
+        .order-status.cancelled {
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Orders</h1>
+    </header>
+    <div class="container">
+        <!-- Order 1 -->
+        <div class="order">
+            <div class="order-info">
+                <h3>Order #12345</h3>
+                <p>Placed on: 20th December 2024</p>
+                <p>Items: Red Dress, White Sneakers</p>
+            </div>
+            <div class="order-status">Delivered</div>
+        </div>
+
+        <!-- Order 2 -->
+        <div class="order">
+            <div class="order-info">
+                <h3>Order #12346</h3>
+                <p>Placed on: 22nd December 2024</p>
+                <p>Items: Blue Jacket</p>
+            </div>
+            <div class="order-status pending">Pending</div>
+        </div>
+
+        <!-- Order 3 -->
+        <div class="order">
+            <div class="order-info">
+                <h3>Order #12347</h3>
+                <p>Placed on: 24th December 2024</p>
+                <p>Items: Black T-shirt, Grey Jeans</p>
+            </div>
+            <div class="order-status cancelled">Cancelled</div>
+        </div>
+    </div>
+</body>
+</html>

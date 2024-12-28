@@ -1,40 +1,45 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Commerce</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body> 
+    <section id="home"></section>
+<div class="login">
     <i class="fa-solid fa-bars sidebar"></i>
 <nav>
     <div class="navbar">
        <img class="logo" src="logo.png" alt="logo">
        
-        <p>Home</p>
-        <p>shop</p>
-        <p>blog</p>
-        <p>content</p>
+        <p><a href="#home">Home</a></p>
+        <p><a href="#shop">Shop</a></p>
+        <p><a href="#footer">Blog</a></p>
+
         <div class="s" >
         <label for="search"><i class="fa-solid fa-magnifying-glass" ></i>
         </label>
         <input type="text" id="search" placeholder="look for the best clothes online">
         </div>
-        <p>orders</p>
-        <p><i class="fa-solid fa-user" style="margin-right: 0.5rem;"></i>log in</p>
+        <p class="dark"><i class="fa-solid fa-lightbulb"></i>Theme</p>
+        <p><a href="order.html">Orders</a></p>
+        <p class="loginas"><i class="fa-solid fa-user " style="margin-right: 0.5rem;"></i></p>
     </div>
 
 </nav>
 
 <div class="first">
-    <img src="ecommerce.png" alt="fashion" class="fashion" >
+    <img src="image.png" alt="fashion" class="fashion" >
     <div class="position">
         <h2 style="color: rgb(232, 228, 0);"><i>SUMMER COLLECTIONS</i></h2>
         <button style="background-color: black; color: white; opacity: 0.9;border-radius: 0.2rem; padding:0.5rem ; border: 1px solid ;"><a href="#shop" style="color: white;text-decoration: none;">SHOP NOW</a></button>
     </div>
 </div>
+</section>
 <h1 style="margin-left:2rem ;">Categories</h1>
 <div class="categories">
     
@@ -65,8 +70,13 @@
     
 <div class="main">
 
+    <div class="add">
+        <button class="adbtn">Add </button>
+    </div>
     
-    <div class="mi"><div class="card">
+    <div class="mi">
+        
+        <div class="card">
         <img src="1.png" alt="">
         <div class="description"> <p>Peter England Shirts </p>
             <p>$1200</p>
@@ -124,7 +134,9 @@
 
 </div>
 </section>
-
+<section id="footer">
+    
+</section>
 <footer>
     <div class="footeritems">
     <div style="display: flex;align-items: center;"><img src="logo.png" class="logo" alt="" style="height: 3rem; width: 5rem;"><span>Shop Sphere</span></div>
@@ -160,6 +172,38 @@
         </div>
 </div>
 </footer>
+</div>
+
+
+<!-- <div class="homedirect">
+    <div class="signup"> -->
+<!-- 
+        <img src="logo.png"  alt="logo">
+        
+        <div class="as">
+            <p>Login/Sign up as:</p>
+            <div class="btns">
+                <button id="r">Retailer</button>
+            <button id="c">Consumer</button>
+            </div>
+            
+        </div>
+            <div class="np">
+                <label for="e">Email:</label>
+            <input type="text" placeholder="enter your email id..." id="e" name="e">
+            </div>
+            <div class="np">
+                <label for="p">Password:</label>
+            <input type="password" name="p" id="p" placeholder="enter your password...">
+            </div>
+            
+            
+            <button class="formsubmit">Submit</button>
+        </div>
+</div> -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="app.js"></script>
 </body>
 </html>
